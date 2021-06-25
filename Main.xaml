@@ -38,7 +38,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -59,6 +59,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -97,13 +98,13 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="608,1801" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="608,2045" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574,1700" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574,1944" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="variableBorrar" />
                 </Sequence.Variables>
@@ -113,7 +114,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Asignacion Usuario Password" sap:VirtualizedContainerService.HintSize="532,51" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                <ui:MultipleAssign DisplayName="Asignacion Usuario Password" sap:VirtualizedContainerService.HintSize="532,129" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -129,21 +130,21 @@
                           <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
                         </ui:AssignOperation.To>
                         <ui:AssignOperation.Value>
-                          <InArgument x:TypeArguments="x:String">Edward316*</InArgument>
+                          <InArgument x:TypeArguments="x:String">Edward316**</InArgument>
                         </ui:AssignOperation.Value>
                       </ui:AssignOperation>
                     </scg:List>
                   </ui:MultipleAssign.AssignOperations>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:MultipleAssign>
-                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  email'" sap:VirtualizedContainerService.HintSize="532,51" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[usuario]">
+                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  email'" sap:VirtualizedContainerService.HintSize="532,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[usuario]">
                   <ui:SetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2b30f10-6ec1-4d00-af4f-cf66d934023c" InformativeScreenshot="5d01711ae3720b16ed773b5a4b71c29f" Selector="&lt;html app='firefox.exe' title='SIGEST' /&gt;&lt;webctrl tag='INPUT' type='email' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2b30f10-6ec1-4d00-af4f-cf66d934023c" InformativeScreenshot="0a7ae470a8cf261881af98341210f434" Selector="&lt;webctrl tag='INPUT' type='email' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -154,14 +155,14 @@
                   </ui:SetValue.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:SetValue>
-                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  password'" sap:VirtualizedContainerService.HintSize="532,51" sap2010:WorkflowViewState.IdRef="SetValue_5" Text="[password]">
+                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  password'" sap:VirtualizedContainerService.HintSize="532,134" sap2010:WorkflowViewState.IdRef="SetValue_5" Text="[password]">
                   <ui:SetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c01bbba-a28e-4444-ac94-5779f5882b34" InformativeScreenshot="2598b398909dc10184f9a33bf964d848" Selector="&lt;html app='firefox.exe' title='SIGEST' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c01bbba-a28e-4444-ac94-5779f5882b34" InformativeScreenshot="9a307fa0c2e14b53ea4d2083426897dc" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -172,7 +173,7 @@
                   </ui:SetValue.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -189,7 +190,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="69ffef9e-409e-44b8-9955-8b122dd84be2" InformativeScreenshot="bfb9eaba2c201c74f047faf5685d757c" Selector="&lt;html app='firefox.exe' title='SIGEST' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="69ffef9e-409e-44b8-9955-8b122dd84be2" InformativeScreenshot="bfb9eaba2c201c74f047faf5685d757c" Selector="&lt;webctrl tag='BUTTON' type='submit' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -373,19 +374,19 @@
                       <av:Size x:Key="ShapeSize">200,66</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Inserccion Documentos" sap:VirtualizedContainerService.HintSize="680,3950" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Inserccion Documentos" sap:VirtualizedContainerService.HintSize="680,4763" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[datos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="638,3858" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[datos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="638,4671" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,3738" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,4551" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="cliente" />
                               <Variable x:TypeArguments="x:String" Name="placa" />
@@ -408,17 +409,17 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch Cliente" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="562,51" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch Cliente" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="562,864" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="376,636" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -434,7 +435,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c49d1383-c8bf-4bf6-aabf-4795621a322d" InformativeScreenshot="17ebf759d1910dd1ad79101585921439" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c49d1383-c8bf-4bf6-aabf-4795621a322d" InformativeScreenshot="ff195532b292d6413b091444017ac438" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -456,7 +457,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4e2520b-0b8e-41a3-a482-ff94d3a11ee7" InformativeScreenshot="2a4f340c79519c34238d684d78a5386f" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4e2520b-0b8e-41a3-a482-ff94d3a11ee7" InformativeScreenshot="888601dfa9933826d8633174ad2422d3" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing - TVH' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -478,7 +479,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ef1691e-7b35-4e89-b33c-ac311bdee699" InformativeScreenshot="90595bf007c267886286a2f3ca86e14d" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='                                                              IB*' tag='A' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ef1691e-7b35-4e89-b33c-ac311bdee699" InformativeScreenshot="7e4f0d23c1b3f035fc152b5434131d36" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='                                                              IB*' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -500,7 +501,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5c9bb54-53ce-4177-a3f5-2b67bd7f6331" InformativeScreenshot="80734718e83d0a31a11f47c248a8aeba" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' tag='A' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5c9bb54-53ce-4177-a3f5-2b67bd7f6331" InformativeScreenshot="9c66c55f44519f1fb10f15a24e70834a" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -511,7 +512,7 @@
                                   </ui:Click.Target>
                                 </ui:Click>
                               </Sequence>
-                              <Sequence x:Key="MASA STORK" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <Sequence x:Key="MASA STORK" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -530,7 +531,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8ff06042-647b-41b2-b31d-42cea19291ae" InformativeScreenshot="9ad0fcf40cfa15cc7f8e5763c93e5a8e" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='MASA STORK - ' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8ff06042-647b-41b2-b31d-42cea19291ae" InformativeScreenshot="a2e49e7ea0a3b4ab8711fbc416a1ee31" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='MASA STORK - ' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -552,7 +553,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39dae0fc-6839-47c2-bb94-7cd81a1649a9" InformativeScreenshot="49fe6f4278eaacce63aaace5c0115da1" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Inventario de bienes' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39dae0fc-6839-47c2-bb94-7cd81a1649a9" InformativeScreenshot="1a22316e7672fc3ee6d100325419e739" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Inventario de bienes' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -574,7 +575,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6607abe1-9917-4b45-9214-9b985ac129ea" InformativeScreenshot="f14a04128d25fd9eed694e6f20eaa4b1" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6607abe1-9917-4b45-9214-9b985ac129ea" InformativeScreenshot="884e63b069bfb9819585ee37d37d2789" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -604,7 +605,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="618e61cb-1d53-4b91-b077-73d63f65178f" InformativeScreenshot="adde8814fb6b95005241d55ca16fe552" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='POPULAR - ' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="618e61cb-1d53-4b91-b077-73d63f65178f" InformativeScreenshot="21bcdca95ceb5db96a69b1a4e5627887" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='POPULAR - ' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -626,7 +627,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="25f67fd5-1b0e-4f1b-93a1-957391ec2b5a" InformativeScreenshot="049f2c9f19fe514f9337d35a08902c29" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing' idx='2' tag='SPAN' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="25f67fd5-1b0e-4f1b-93a1-957391ec2b5a" InformativeScreenshot="ce39e214c3835d63238281cf64d26b8d" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing' tag='SPAN' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -648,7 +649,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="88ec008a-245b-4ca3-9c31-252c172060af" InformativeScreenshot="d36f218c3fb67dea8df6fb4ea4bad42a" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='                                                          IBL   *' tag='A' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="88ec008a-245b-4ca3-9c31-252c172060af" InformativeScreenshot="3bafb374bd7bbaca8d23df7e8eea91e6" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='                                                          IBL   *' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -670,7 +671,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="69b953a2-c600-4985-a99e-0fe8bbb68f7b" InformativeScreenshot="f0697d7a1219bfdefb04984f4b3dc56e" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' href='https://desarrollo.tessi.co/TablasCaso' tag='A' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="69b953a2-c600-4985-a99e-0fe8bbb68f7b" InformativeScreenshot="d997daf2f11fbf7845c3086f3399c17d" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl aaname='Busqueda de Bienes' href='https://sigestqa.tessi.co:8002/TablasCaso' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -696,7 +697,7 @@
                             </ui:GetRowItem>
                             <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="562,134" sap2010:WorkflowViewState.IdRef="SetValue_7" Text="[placa]">
                               <ui:SetValue.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc5959a0-0315-4a03-bcb3-78466bac27ee" InformativeScreenshot="616f554123578f25f76dd49fb5a56bef" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl parentid='app' tag='INPUT' /&gt;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc5959a0-0315-4a03-bcb3-78466bac27ee" InformativeScreenshot="54568fe1c8ac1dd46ef222f1daf9975b" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl parentid='app' tag='INPUT' /&gt;">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
@@ -718,7 +719,7 @@
                                 </ui:CursorPosition>
                               </ui:Click.CursorPosition>
                               <ui:Click.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="30060d01-de33-4d64-8169-1a0cb1253179" InformativeScreenshot="378c645c32d5752ed1e3f7463b56a61a" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;&lt;webctrl tag='BUTTON' /&gt;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="30060d01-de33-4d64-8169-1a0cb1253179" InformativeScreenshot="378c645c32d5752ed1e3f7463b56a61a" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;&lt;webctrl tag='BUTTON' /&gt;">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
@@ -741,10 +742,10 @@
                                 </ui:CursorPosition>
                               </ui:ClickImage.CursorPosition>
                               <ui:ClickImage.Image>
-                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVEhL7ZfBTsJAEIb7VFx9AnkDLxy58Qq+AVfCBQ8eiFwk4QDhYKwiCcRojAJiTCQNpiFYyrYsXbq/W6imkmpaY9iYdNLv0HR3vtmZvVQxqgeYHu/h7WQfRiW9U5RpKSVF7KFMj1KhH3ZBIpdCIpfCf5RnYd1W4eg9uDaBO+uBaVUsLrMha78nttxUy2B0CXDxzDugN6dYMWyCL8H1MkgtfO82seRmV4XraHDumnBX96CDB3BRxGfMmli8aOCWCjtCAdHltaI48QRONwOj0wJ3nsBmogPBWLRgVzKwtQn4axFmWJ4A0eVqQ5x6CHrmvZfAPlodCK6X1mvJYChG0gDZzrFFrLavk9pt2HV/BK5v9cJvtXndDhT5MzEvXAbWY1+0fATWz2Nez4FcHIKc52A286DjETjtg16J0YTu/0pM+QZTLWCpj8GZmLlDwFfiltMx2HMh8k33+JX8r0jkUkjkUpAsl/bTkMY7CSi/LQb1jkYAAAAASUVORK5CYII=" />
+                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF7SURBVEhL7Zc/S8NAHIb7qbr6CdqP4NCxm6OLori4CR2cHOzgZIWCdCh0cJAuRfoHoWihpTQVtPlDcknaJHevl5qjgwnkRFqF/OAZLrm79yG/uyE5434f2s0e9NsCjFpxq4SZYXZOu87vREAQZue0aj725TbJJASZhCCTEPxjieYZ3FEbvjoF9T5A1QG80RXsZszcFEhKlECGfbCAAnBB32pwX1/A+AjgzwId/vAYZuzaZCQkSnBm72DWA9zJFFjUsVTtdbwoOqnCsyzQWUVKJLWE2XsCc9pwGkU4igamP4MGUXpUTLmA0ajAcwz4vVLsPnGkliBjhQffgYTjAW9JFLwpF/4gnHuIpW6Djk++7ZGERDuizeeX/FN/tWZTQdSCMpz5YiObErmD2Tjn50AHMztYdg5gto5AHk9BWmVYnRp80wJT67B5y2LXJyAnsYbfkG4TPjH4LVmBefxwBi4Y6WPVlb8ZIT+Q+H0yCUEmIcgkBH9EYuc/PwV8AkLSXHFTjzDgAAAAAElFTkSuQmCC" />
                               </ui:ClickImage.Image>
                               <ui:ClickImage.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2300b640-8ad4-4c3f-95e9-67b6c08fcc9d" Selector="&lt;html app='firefox.exe' title='SIGEST 08/06/2021' /&gt;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2300b640-8ad4-4c3f-95e9-67b6c08fcc9d" Selector="&lt;html app='firefox.exe' title='SIGEST 25/06/2021' /&gt;">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
